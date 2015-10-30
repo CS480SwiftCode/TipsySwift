@@ -1,0 +1,7 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/application.conf,/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/evolutions,/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/logback.xml,/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/routes,/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/evolutions/default,/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/target/scala-2.11/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/evolutions/default/1.sql,/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/target/scala-2.11/classes/evolutions/default/1.sql)[0m
