@@ -3,9 +3,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.avaje.ebean.Ebean;
 import com.fasterxml.jackson.databind.JsonNode;
+import models.Locations;
 import org.junit.*;
 
+import play.Application;
 import play.mvc.*;
 import play.test.*;
 import play.data.DynamicForm;
@@ -28,6 +31,8 @@ import static org.junit.Assert.*;
 */
 public class ApplicationTest {
 
+    private Application application;
+
     @Test
     public void simpleCheck() {
         int a = 1 + 1;
@@ -41,5 +46,26 @@ public class ApplicationTest {
         assertTrue(contentAsString(html).contains("Your new application is ready."));
     }
 
+    @Before
+    public void setup() {
+        application = Helpers.fakeApplication();
+        Helpers.start(application);
+    }
+
+    @Test
+    public void mysqlInsertCheck() {
+
+        int size = Locations.find.all().size();
+        Locations loc = new Locations();
+        loc.save();
+        assert(Locations.find.all().size() - size == 1);
+        Locations.find.ref("0").delete();
+        assert(Locations.find.all().size() - size == 0);
+   }
+
+    @After
+    public void teardown() {
+        Helpers.stop(application);
+    }
 
 }
