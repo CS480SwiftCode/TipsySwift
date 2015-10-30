@@ -41,10 +41,10 @@ public class Locations extends Model {
     @Column(columnDefinition = "INT(1)")
     int rating;
 
-    @Column(columnDefinition = "BLOB")
+    @Column(columnDefinition = "BLOB NOT NULL")
     String hours_of_op;
 
-    @Column(columnDefinition = "BLOB")
+    @Column(columnDefinition = "BLOB NOT NULL")
     String happy_hour_times;
 
 }

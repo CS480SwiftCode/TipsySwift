@@ -13,6 +13,8 @@ create table locations (
   longitude                 FLOAT(24),
   e_w                       CHAR(1),
   rating                    INT(1),
+  hours_of_op               BLOB NOT NULL,
+  happy_hour_times          BLOB NOT NULL,
   constraint pk_locations primary key (hash))
 ;
 
