@@ -19,7 +19,7 @@ create table locations (
 ;
 
 create table zipcodes (
-  zipcode                   INT(5) not null,
+  zipcode                   INT(5) auto_increment not null,
   latitude                  FLOAT(24),
   n_s                       CHAR(1),
   longitude                 FLOAT(24),
@@ -27,24 +27,16 @@ create table zipcodes (
   constraint pk_zipcodes primary key (zipcode))
 ;
 
-create sequence locations_seq;
-
-create sequence zipcodes_seq;
-
 
 
 
 # --- !Downs
 
-SET REFERENTIAL_INTEGRITY FALSE;
+SET FOREIGN_KEY_CHECKS=0;
 
-drop table if exists locations;
+drop table locations;
 
-drop table if exists zipcodes;
+drop table zipcodes;
 
-SET REFERENTIAL_INTEGRITY TRUE;
-
-drop sequence if exists locations_seq;
-
-drop sequence if exists zipcodes_seq;
+SET FOREIGN_KEY_CHECKS=1;
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<nav id="main-menu">
+     <ul class="nav-bar">
+          <li icon="fa-map"><a href="#">Map</a></li>
+          <li icon="fa-table"><a href="#">Table</a></li>
+          <li icon="fa-plus"><a href="#">New Entry</a></li>
+          <li icon="fa-money"><a href="#">About Us</a></li>
+
+     </ul>
+</nav>
+  <body>
+     <form name="searchForm" novalidate 
+    ng-submit="search()">
+        <div class="input-group">
+            <input name="place" type="text" class="form-control" 
+            ng-model="searchPlace" required autofocus />
+            <span class="input-group-btn">
+                <button class="btn btn-primary" 
+                ng-disabled="searchForm.$invalid">Search</button>
+            </span>
+        </div>
+    </form>     
+    <div id="map"></div>
+  </body>
+</html>

@@ -8,7 +8,9 @@ import views.html.*;
 public class Application extends Controller {
 
     public Result index() {
-        return ok(index.render("Your new application is ready."));
+        return ok(views.html.main.render("Test",play.twirl.api.Html.apply("html")));
     }
+
+
 
 }

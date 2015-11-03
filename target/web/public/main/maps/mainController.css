@@ -1,0 +1,25 @@
+#main-menu .nav-bar {
+  background-color: #b0c4de;
+  list-style: none;
+  margin-top: 5px; 
+  height: 40px;}
+#main-menu .nav-bar li { display:inline; padding:0 20px; }
+
+#main-menu .nav-bar li a {
+  text-decoration: none;
+  padding-left: 5px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 30px;
+  color: #333;
+	text-shadow: 1px 1px 1px #ccc;
+}
+h3 img {
+    max-height: 50px;
+}
+#map { 
+    height: 650px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
