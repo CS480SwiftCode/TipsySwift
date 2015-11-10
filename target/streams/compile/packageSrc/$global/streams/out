@@ -1,0 +1,21 @@
+[0m[[0minfo[0m] [0mPackaging /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/target/scala-2.11/tipsyswift_2.11-1.0-SNAPSHOT-sources.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	logback.xml[0m
+[0m[[0mdebug[0m] [0m	  /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/logback.xml[0m
+[0m[[0mdebug[0m] [0m	evolutions[0m
+[0m[[0mdebug[0m] [0m	  /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/evolutions[0m
+[0m[[0mdebug[0m] [0m	controllers/Application.java[0m
+[0m[[0mdebug[0m] [0m	  /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/app/controllers/Application.java[0m
+[0m[[0mdebug[0m] [0m	application.conf[0m
+[0m[[0mdebug[0m] [0m	  /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/application.conf[0m
+[0m[[0mdebug[0m] [0m	models/Zipcodes.java[0m
+[0m[[0mdebug[0m] [0m	  /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/app/models/Zipcodes.java[0m
+[0m[[0mdebug[0m] [0m	evolutions/default[0m
+[0m[[0mdebug[0m] [0m	  /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/evolutions/default[0m
+[0m[[0mdebug[0m] [0m	models/Locations.java[0m
+[0m[[0mdebug[0m] [0m	  /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/app/models/Locations.java[0m
+[0m[[0mdebug[0m] [0m	routes[0m
+[0m[[0mdebug[0m] [0m	  /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/routes[0m
+[0m[[0mdebug[0m] [0m	evolutions/default/1.sql[0m
+[0m[[0mdebug[0m] [0m	  /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/evolutions/default/1.sql[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
