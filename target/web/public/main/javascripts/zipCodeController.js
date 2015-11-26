@@ -1,6 +1,6 @@
 angular.module("app").controller('zipCodeController', ['$rootScope', '$location', '$scope', '$http', '$cookies', function($rootScope, $location, $scope, $http, $cookies) {
   $scope.location = "";
-  $http.get('/assets/test.csv')
+  $http.get('/map')
       .then(function(res){
       $cookies.putObject('locationChoice', Papa.parse(res.data).data);
       //$rootScope.$broadcast('eventSwag', { message: Papa.parse(res.data) });

@@ -7,7 +7,7 @@ console.log(message);
 Map.init()
 drop();
 $scope.search = function() {
-    console.log('swag');
+    console.log('swag'); //swaggy
     $scope.apiError = false;
     Map.search($scope.searchPlace)
     .then(
