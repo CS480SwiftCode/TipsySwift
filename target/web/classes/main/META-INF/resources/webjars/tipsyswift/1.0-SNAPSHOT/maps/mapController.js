@@ -20,12 +20,13 @@ $scope.search = function() {
             Map.removeMarker(marks);
             Map.center(res);
             marks = [];
-            /*$http.get('test.csv')
+            var swaggy = '/map?location=' + $scope.place.lat + "," + $scope.place.lng;
+            $http.get()
                 .then(function(res){
                 message = Papa.parse(res.data).data;
                 $cookies.putObject('locationChoice', Papa.parse(res.data).data);
-            });*/
-            //drop();
+            });
+            drop();
 
         },
         function(status) { // error
@@ -42,8 +43,10 @@ $scope.send = function() {
     
 function drop() {
     for(i = 1; i < message.length; i++){
-        res = {position : new google.maps.LatLng(message[i][9], message[i][10]),
-                url : message[i][6]};
+        var pos = new google.maps.LatLng(message[i][9], message[i][10]);
+        res = {position : pos,
+                url : message[i][6],
+                name: new google.maps.InfoWindow({ content: '<div id="content" style="color:black">' + message[i][0] + '<div>', position : pos})};
         marks.push(Map.addMarker(res));
     }
 }

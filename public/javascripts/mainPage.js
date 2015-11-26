@@ -99,6 +99,14 @@ app.service('Map', function($q, $cookies) {
         });
         google.maps.event.addListener(this.marker, 'click', function() {
             window.location.href = this.url; });
+        google.maps.event.addListener(this.marker, 'click', function() {
+            window.location.href = this.url; });
+        google.maps.event.addListener(this.marker, 'mouseover', function() {
+            res.name.open(this.map, this.marker);
+        });
+        this.marker.addListener('mouseout', function() {
+            res.name.close();
+        });
         return this.marker;
     }
 
