@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/routes
-// @DATE:Tue Nov 03 09:47:44 PST 2015
+// @DATE:Wed Nov 25 18:12:42 PST 2015
 
 package controllers;
 

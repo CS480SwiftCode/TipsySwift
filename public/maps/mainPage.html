@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html>
-<nav id="main-menu">
-     <ul class="nav-bar">
-          <li icon="fa-map"><a href="#">Map</a></li>
-          <li icon="fa-table"><a href="#">Table</a></li>
-          <li icon="fa-plus"><a href="#">New Entry</a></li>
-          <li icon="fa-money"><a href="#">About Us</a></li>
-
-     </ul>
-</nav>
+<link href="/assets/maps/mainController.css" rel="stylesheet" />
+<h1>Find your pin of happy<h1>
   <body>
+    <div ng-controller="mapController as dm"> 
      <form name="searchForm" novalidate 
     ng-submit="search()">
         <div class="input-group">
@@ -22,5 +16,12 @@
         </div>
     </form>     
     <div id="map"></div>
-  </body>
 </html>
+<div>
+    <action-menus>
+                  options="dm.pages">
+    </action-menus>
+  </div>
+</div>
+</div>
+</body>

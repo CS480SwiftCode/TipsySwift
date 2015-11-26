@@ -1,0 +1,155 @@
+body {
+  background: #7986CB;
+  color: gray;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+}
+
+h1 {
+  color: white;
+  font-size: 3em;
+}
+h2{
+  color: white;
+}
+
+a {
+  color: inherit;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, .box ,.floating-placeholder {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20pt;
+  line-height: 2.6em;
+  height: 2.6em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.floating-placeholder input:focus + label {
+  color: #16abf0;
+}
+
+.floating-placeholder input[value] + label {
+  color: red;
+}
+
+.floating-placeholder {
+  position: relative;
+}
+
+.floating-placeholder input, select {
+  font-size: 20pt;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: transparent;
+  z-index: 2;
+  border-bottom: 1px solid #ccc;
+  text-indent: 20px;
+}
+
+.floating-placeholder:last-child input {
+  border-bottom: none;
+}
+
+.circle_menu {
+  width: 56px;
+  height: 56px;
+  margin: 0 0.5rem 0 0.5rem;
+  border-radius: 56px;
+  background: #e91e63;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  line-height: 56px;
+  font-size: 1.25rem;
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  bottom: 5px;
+  right: 0px;
+  z-index: 9999;
+}
+
+.menu_btn {
+  -webkit-transition: all 250ms ease;
+          transition: all 250ms ease;
+  background: #e91e63;
+}
+
+.open .menu_btn {
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+.open .menu {
+  -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+          transform: scale(1, 1);
+  opacity: 1;
+}
+.open .menu .menu_itm {
+  opacity: 1;
+}
+
+.menu {
+  height: 400px;
+  width: 400px;
+  background-color: #F06292;
+  position: fixed;
+  bottom: -200px;
+  right: -200px;
+  z-index: 999;
+  border-radius: 50%;
+  box-shadow: -2px -1px 3px rgba(0, 0, 0, 0.24);
+  opacity: 0;
+  -webkit-transform: scale(0, 0);
+      -ms-transform: scale(0, 0);
+          transform: scale(0, 0);
+  -webkit-transition: all 200ms ease-in-out;
+          transition: all 200ms ease-in-out;
+}
+.menu .menu_itm {
+  display: block;
+  line-height: 56px;
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in 215ms;
+          transition: opacity 200ms ease-in 215ms;
+}
+.menu .menu_itm:nth-child(1) {
+  right: 220px;
+  bottom: 340px;
+}
+.menu .menu_itm:nth-child(2) {
+  right: 315px;
+  bottom: 285px;
+}
+.menu .menu_itm:nth-child(3) {
+  right: 350px;
+  bottom: 200px;
+}
+
+
+.floating-placeholder-float input {
+  line-height: 3.4em;
+}
+

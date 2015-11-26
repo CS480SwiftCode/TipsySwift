@@ -1,42 +1,82 @@
-var app = angular.module("app", ["ui.bootstrap", "ngRoute", "ngSanitize", "ngCookies"]);
+var app = angular.module("app", ["ui.bootstrap", "ngRoute", "ngSanitize", "ngCookies", "angularjs-dropdown-multiselect"]);
 
 app.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
 
     $routeProvider     
     .when('/', {
         templateUrl : '/assets/maps/zipCodeTemplate.html',
-        controller  : 'zipCodeController'
+        //controller  : '/assets/javascripts/zipCodeController.js'
     })
     .when('/map', {
-        templateUrl : '/assets/maps/mainPage.html',
-        controller  : 'mapController'
+        templateUrl : '/assets/maps/mainPage.html'
+        //controller  : 'mapController'
     })
     .when('/table', {
-        templateUrl : '/assets/maps/zipCodeTemplate.html',
-        controller  : 'zipCodeController'
+        templateUrl : '/assets/tables/tableTemplate.html'
+        //controller  : 'tableController'
     })
     .when('/dataentry', {
-        templateUrl : 'views/mainPageTemplate.html',
-        controller  : 'mapController'
-    })
-    .when('/aboutus', {
-        templateUrl : 'mainPageTemplate.html',
-        controller  : 'mapController'
+        templateUrl : '/assets/forms/formTemplate.html'
+        //controller  : 'formController'
     });
 }]);
 
-app.service('Map', function($q) {
+app.directive('actionMenu', function() {
+    return {
+        restrict: 'E',
+        template: '<div class="circle_menu"><i class="fa fa-bars menu_btn"></i></div><div class="menu"><i class="fa {{page.icon}} menu_itm" ng-repeat="page in vm.pages" ng-click="vm.open(page.tpl)"></i></div>',
+        link: function(scope, element, attrs){
+            element.on('click', toggle);
+            function toggle() {
+                element.toggleClass('open');
+            }
+        }
+    };
+});
+app.directive('actionMenus', function() {
+    return {
+        restrict: 'E',
+        template: '<div class="circle_menu"><i class="fa fa-bars menu_btn"></i></div><div class="menu"><i class="fa {{page.icon}} menu_itm" ng-repeat="page in dm.pages" ng-click="dm.open(page.tpl)"></i></div>',
+        link: function(scope, element, attrs){
+            element.on('click', toggle);
+            function toggle() {
+                element.toggleClass('open');
+            }
+        }
+    };
+});
+app.directive('actionMenusd', function() {
+    return {
+        restrict: 'E',
+        template: '<div class="circle_menu"><i class="fa fa-bars menu_btn"></i></div><div class="menu"><i class="fa {{page.icon}} menu_itm" ng-repeat="page in lm.pages" ng-click="lm.open(page.tpl)"></i></div>',
+        link: function(scope, element, attrs){
+            element.on('click', toggle);
+            function toggle() {
+                element.toggleClass('open');
+            }
+        }
+    };
+});
+
+
+
+app.service('Map', function($q, $cookies) {
     
     this.init = function() {
+        var opts = $cookies.getObject('geoPlace');
         var options = {
-            center: new google.maps.LatLng(40.7127837, -74.00594130000002),
-            zoom: 13,
-            disableDefaultUI: true    
+            center: new google.maps.LatLng(opts.lat, opts.lng),
+            zoom: 14
+            //disableDefaultUI: true    
         }
         this.map = new google.maps.Map(
             document.getElementById("map"), options
         );
         this.places = new google.maps.places.PlacesService(this.map);
+    }
+
+    this.center = function(res) {
+        this.map.setCenter(res);
     }
     
     this.search = function(str) {
@@ -51,13 +91,21 @@ app.service('Map', function($q) {
     }
     
     this.addMarker = function(res) {
-        if(this.marker) this.marker.setMap(null);
         this.marker = new google.maps.Marker({
             map: this.map,
-            position: res.geometry.location,
-            animation: google.maps.Animation.DROP
+            position: res.position,
+            animation: google.maps.Animation.DROP, 
+            url : res.url
         });
-        this.map.setCenter(res.geometry.location);
+        google.maps.event.addListener(this.marker, 'click', function() {
+            window.location.href = this.url; });
+        return this.marker;
+    }
+
+    this.removeMarker = function(res){
+        for(i = 0; i < res.length; i++){
+            res[i].setMap(null);
+        }
     }
     
 });
