@@ -62,8 +62,6 @@ public class Locations extends Model {
     @Column(columnDefinition = "BLOB NOT NULL")
     String happy_hour_times;
 
-    public static Finder<String,Locations> find = new Finder<>(Locations.class);
-
    public String getHash()
    {
       return hash;
@@ -109,9 +107,9 @@ public class Locations extends Model {
       return latitude;
    }
 
-   public void setLatitude(float latitude)
+   public void setLatitude(double latitude)
    {
-      this.latitude = latitude;
+      this.latitude = (long)latitude;
    }
 
    public char getN_s()
@@ -129,9 +127,9 @@ public class Locations extends Model {
       return longitude;
    }
 
-   public void setLongitude(float longitude)
+   public void setLongitude(double longitude)
    {
-      this.longitude = longitude;
+      this.longitude = (long)longitude;
    }
 
    public char getE_w()
@@ -173,4 +171,26 @@ public class Locations extends Model {
    {
       this.happy_hour_times = happy_hour_times;
    }
+
+    /**
+     * returns the latitude and longitude in correct format
+     * @return
+     */
+    private String getLatLon()
+    {
+        if (n_s == 'S')
+            latitude = 0 - latitude;
+        if (e_w == 'W')
+            longitude = 0 - longitude;
+        return latitude + "," + longitude;
+    }
+
+    /**
+     * "Name,Address,City,State,ZipCode,CountryCode,URL,Phone,Rating,Latitude,Longitude"
+     * @return
+     */
+    public String toString()
+    {
+        return name + "," + "," + "," + "," + "," + "," + yelp_url + "," + phone + "," + rating + "," + getLatLon();
+    }
 }

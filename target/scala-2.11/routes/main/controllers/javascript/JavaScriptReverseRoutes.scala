@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/cfrancis/projects/TipsySwift/conf/routes
-// @DATE:Wed Nov 25 19:21:38 PST 2015
+// @SOURCE:/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/routes
+// @DATE:Fri Nov 27 23:41:53 PST 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -42,6 +42,16 @@ package controllers.javascript {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:9
+    def getLocations: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getLocations",
+      """
+        function(location) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "map" + _qS([(""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("location", location)])})
+        }
+      """
+    )
   
     // @LINE:6
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(

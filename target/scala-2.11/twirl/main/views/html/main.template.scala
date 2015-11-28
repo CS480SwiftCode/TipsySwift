@@ -37,7 +37,7 @@ Seq[Any](format.raw/*1.19*/("""
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Login Tests</title>
+    <title>Tipsy Hour - made with <3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/assets/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -93,9 +93,9 @@ Seq[Any](format.raw/*1.19*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Wed Nov 25 19:21:38 PST 2015
-                  SOURCE: /Users/cfrancis/projects/TipsySwift/app/views/main.scala.html
-                  HASH: 134587b54f4ca89ebe55558b0a2bcc10de31f1e9
+                  DATE: Fri Nov 27 23:41:54 PST 2015
+                  SOURCE: /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/app/views/main.scala.html
+                  HASH: f76885a8245f0592e36e9ee4f2f45776e6dce79e
                   MATRIX: 741->1|853->18|882->21
                   LINES: 27->1|32->1|35->4
                   -- GENERATED --

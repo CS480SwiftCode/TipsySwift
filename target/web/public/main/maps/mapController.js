@@ -1,4 +1,4 @@
-angular.module("app").controller('mapController', ['$rootScope', '$document', 'Map', '$scope', '$location', '$cookies', function($rootScope, $document, Map, $scope, $location, $cookies) {
+angular.module("app").controller('mapController', ['$rootScope', '$document', 'Map', '$scope', '$location', '$cookies', '$http', function($rootScope, $document, Map, $scope, $location, $cookies, $http) {
 $scope.place = {};
 var res;
 var marks = [];
@@ -20,10 +20,10 @@ $scope.search = function() {
             Map.removeMarker(marks);
             Map.center(res);
             marks = [];
-            var swaggy = '/map?location=' + $scope.place.lat + "," + $scope.place.lng;
-            $http.get()
+            var swaggy = '/map?location=' + $scope.place.lat + "_" + $scope.place.lng;
+            console.log(swaggy);
+            $http.get(swaggy)
                 .then(function(res){
-                message = Papa.parse(res.data).data;
                 $cookies.putObject('locationChoice', Papa.parse(res.data).data);
             });
             drop();

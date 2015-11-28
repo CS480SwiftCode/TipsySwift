@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/cfrancis/projects/TipsySwift/conf/routes
-// @DATE:Wed Nov 25 19:21:38 PST 2015
+// @SOURCE:/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/routes
+// @DATE:Fri Nov 27 23:41:53 PST 2015
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -34,6 +34,12 @@ package controllers {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:9
+    def getLocations(location:String): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "map" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("location", location)))))
+    }
   
     // @LINE:6
     def index(): Call = {

@@ -10,7 +10,7 @@ angular.module("app").controller('zipCodeController', ['$rootScope', '$location'
        	lat: results[0].geometry.location.lat(),
       	lng : results[0].geometry.location.lng()
       };
-      var swaggy = '/map?location=' + geoCords.lat + "," + geoCords.lng;
+      var swaggy = '/map?location=' + geoCords.lat + "_" + geoCords.lng;
       console.log(swaggy);
       $http.get(swaggy)
       .then(function(res){

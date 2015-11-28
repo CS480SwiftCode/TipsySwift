@@ -18,13 +18,13 @@ create table locations (
   constraint pk_locations primary key (hash))
 ;
 
-create table zipcodes (
-  zipcode                   INT(5) auto_increment not null,
+create table swag_zone (
+  id                        bigint auto_increment not null,
   latitude                  FLOAT(24),
   n_s                       CHAR(1),
   longitude                 FLOAT(24),
   e_w                       CHAR(1),
-  constraint pk_zipcodes primary key (zipcode))
+  constraint pk_swag_zone primary key (id))
 ;
 
 
@@ -36,7 +36,7 @@ SET FOREIGN_KEY_CHECKS=0;
 
 drop table locations;
 
-drop table zipcodes;
+drop table swag_zone;
 
 SET FOREIGN_KEY_CHECKS=1;
 
