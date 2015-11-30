@@ -4,26 +4,26 @@
 # --- !Ups
 
 create table locations (
-  hash                      VARCHAR(64) not null,
+  id                        bigint auto_increment not null,
   name                      VARCHAR(255),
   yelp_url                  VARCHAR(255),
+  address                   VARCHAR(255),
+  city                      VARCHAR(255),
+  state                     VARCHAR(255),
+  zip_code                  VARCHAR(255),
   phone                     VARCHAR(10),
   latitude                  FLOAT(24),
-  n_s                       CHAR(1),
   longitude                 FLOAT(24),
-  e_w                       CHAR(1),
   rating                    INT(1),
-  hours_of_op               BLOB NOT NULL,
   happy_hour_times          BLOB NOT NULL,
-  constraint pk_locations primary key (hash))
+  constraint uq_locations_yelp_url unique (yelp_url),
+  constraint pk_locations primary key (id))
 ;
 
 create table swag_zone (
   id                        bigint auto_increment not null,
-  latitude                  FLOAT(24),
-  n_s                       CHAR(1),
-  longitude                 FLOAT(24),
-  e_w                       CHAR(1),
+  coordinates               VARCHAR(255),
+  constraint uq_swag_zone_coordinates unique (coordinates),
   constraint pk_swag_zone primary key (id))
 ;
 

@@ -93,7 +93,7 @@ Seq[Any](format.raw/*1.19*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Fri Nov 27 23:41:54 PST 2015
+                  DATE: Mon Nov 30 14:50:05 PST 2015
                   SOURCE: /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/app/views/main.scala.html
                   HASH: f76885a8245f0592e36e9ee4f2f45776e6dce79e
                   MATRIX: 741->1|853->18|882->21

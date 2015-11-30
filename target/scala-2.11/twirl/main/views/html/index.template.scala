@@ -54,7 +54,7 @@ Seq[Any](format.raw/*1.19*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Fri Nov 27 23:41:54 PST 2015
+                  DATE: Mon Nov 30 14:50:05 PST 2015
                   SOURCE: /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/app/views/index.scala.html
                   HASH: 490aea2b349832ab3a2332a197521e098db17506
                   MATRIX: 745->1|857->18|885->21|898->27|937->29|969->32

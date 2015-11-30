@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@233233bc[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@ca791a0[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.6[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.6] org.scala-lang#scala-library;2.11.6[0m
@@ -431,7 +431,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.google.inject.extensions#guice-assistedinject;4.0!guice-assistedinject.pom(pom.original) (71ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.google.inject.extensions#guice-assistedinject;4.0!guice-assistedinject.pom(pom.original) (106ms)[0m
 [0m[[0minfo[0m] [0mResolving com.google.inject.extensions#extensions-parent;4.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.inject.extensions#extensions-parent;4.0 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.inject.extensions#extensions-parent;4.0[0m
@@ -1089,6 +1089,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving javax.validation#validation-api;1.1.0.Final ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: javax.validation#validation-api;1.1.0.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: javax.validation#validation-api;1.1.0.Final[0m
@@ -1105,6 +1106,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.jboss.logging#jboss-logging;3.1.1.GA ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.jboss.logging#jboss-logging;3.1.1.GA[0m
@@ -1126,6 +1128,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving com.fasterxml#classmate;1.0.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.fasterxml#classmate;1.0.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.fasterxml#classmate;1.0.0[0m
@@ -1613,7 +1616,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->junit#junit;4.11 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving junit#junit;4.11 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: junit#junit;4.11 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56cf0e86[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: junit#junit;4.11[0m
 [0m[[0mdebug[0m] [0m	found junit#junit;4.11 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->junit#junit;4.11 [compile->runtime][0m
@@ -1637,6 +1640,38 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scribe#scribe;1.3.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scribe#scribe;1.3.5 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scribe#scribe;1.3.5[0m
+[0m[[0mdebug[0m] [0m	found org.scribe#scribe;1.3.5 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.jsoup#jsoup;1.7.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.jsoup#jsoup;1.7.2[0m
+[0m[[0mdebug[0m] [0m	found org.jsoup#jsoup;1.7.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.googlecode.json-simple#json-simple;1.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.googlecode.json-simple#json-simple;1.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.googlecode.json-simple#json-simple;1.1[0m
+[0m[[0mdebug[0m] [0m	found com.googlecode.json-simple#json-simple;1.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.beust#jcommander;1.48 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.beust#jcommander;1.48 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.beust#jcommander;1.48[0m
+[0m[[0mdebug[0m] [0m	found com.beust#jcommander;1.48 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT [compile][0m
@@ -1921,6 +1956,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->javax.validation#validation-api;1.1.0.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->org.jboss.logging#jboss-logging;3.1.1.GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -1933,6 +1970,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: log4j#log4j;1.2.16 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: log4j#log4j;1.2.17 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->org.jboss.logging#jboss-logging;3.1.1.GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: log4j#log4j;1.2.16 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: log4j#log4j;1.2.17 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
@@ -1947,6 +1986,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->com.fasterxml#classmate;1.0.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
@@ -2474,6 +2515,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT [runtime][0m
@@ -2759,6 +2816,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->javax.validation#validation-api;1.1.0.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->org.jboss.logging#jboss-logging;3.1.1.GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -2771,6 +2831,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: log4j#log4j;1.2.16 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: log4j#log4j;1.2.17 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->org.jboss.logging#jboss-logging;3.1.1.GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: log4j#log4j;1.2.16 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: log4j#log4j;1.2.17 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
@@ -2785,6 +2848,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->com.fasterxml#classmate;1.0.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
@@ -3312,6 +3378,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.3 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-test_2.11;2.4.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-test_2.11;2.4.3 {test=[default(compile)]}[0m
@@ -4213,6 +4295,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.4.3->org.fluentlenium#fluentlenium-core;0.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.4.3->org.fluentlenium#fluentlenium-core;0.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.3 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->junit#junit;4.11 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->junit#junit;4.12 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->junit#junit;4.12 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->junit#junit;4.12 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->junit#junit;4.12 [test->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
@@ -4501,6 +4588,10 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->javax.validation#validation-api;1.1.0.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->org.jboss.logging#jboss-logging;3.1.1.GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -4513,6 +4604,10 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: log4j#log4j;1.2.16 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: log4j#log4j;1.2.17 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->org.jboss.logging#jboss-logging;3.1.1.GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: log4j#log4j;1.2.16 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: log4j#log4j;1.2.17 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
@@ -4527,6 +4622,10 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->com.fasterxml#classmate;1.0.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
@@ -5054,6 +5153,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
@@ -5341,6 +5456,10 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->javax.validation#validation-api;1.1.0.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->org.jboss.logging#jboss-logging;3.1.1.GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -5353,6 +5472,10 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: log4j#log4j;1.2.16 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: log4j#log4j;1.2.17 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->org.jboss.logging#jboss-logging;3.1.1.GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: log4j#log4j;1.2.16 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: log4j#log4j;1.2.17 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
@@ -5367,6 +5490,10 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->com.fasterxml#classmate;1.0.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
@@ -5894,6 +6021,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT [test-internal][0m
@@ -6181,6 +6324,12 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->javax.validation#validation-api;1.1.0.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->org.jboss.logging#jboss-logging;3.1.1.GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -6193,6 +6342,12 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: log4j#log4j;1.2.16 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: log4j#log4j;1.2.17 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->org.jboss.logging#jboss-logging;3.1.1.GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: log4j#log4j;1.2.16 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: log4j#log4j;1.2.17 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
@@ -6207,6 +6362,12 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jboss.logging#jboss-logging;3.2.1.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.jboss.logging#jboss-logging;3.1.1.GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.12 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.jsoup#jsoup;1.7.2 {compile=[default(compile)]} => dependency: org.jsoup#jsoup;1.7.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.hibernate#hibernate-validator;5.0.3.Final->com.fasterxml#classmate;1.0.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
@@ -6734,6 +6895,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.35 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.scribe#scribe;1.3.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->org.jsoup#jsoup;1.7.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.googlecode.json-simple#json-simple;1.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.beust#jcommander;1.48 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.3 [test->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.3 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.3 [test->compile][0m
@@ -7465,6 +7642,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-java;2.44.0->org.webbitserver#webbit;0.4.14 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-java;2.44.0->org.webbitserver#webbit;0.4.14 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.3 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->junit#junit;4.11 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->junit#junit;4.12 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->junit#junit;4.12 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->junit#junit;4.12 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT->junit#junit;4.12 [test->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
@@ -8086,6 +8268,10 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-ws_2.11;2.4.3!play-java-ws_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] junit#junit;4.11!junit.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] mysql#mysql-connector-java;5.1.35!mysql-connector-java.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scribe#scribe;1.3.5!scribe.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jsoup#jsoup;1.7.2!jsoup.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.googlecode.json-simple#json-simple;1.1!json-simple.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.beust#jcommander;1.48!jcommander.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.4!commons-lang3.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-jdbc-evolutions_2.11;2.4.0!play-jdbc-evolutions_2.11.jar[0m
@@ -8212,7 +8398,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.3!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3!scala-parser-combinators_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 7121ms :: artifacts dl 84ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 7550ms :: artifacts dl 84ms[0m
 [0m[[0mdebug[0m] [0m	report for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT compile produced in /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/target/resolution-cache/reports/tipsyswift-tipsyswift_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT runtime produced in /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/target/resolution-cache/reports/tipsyswift-tipsyswift_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT test produced in /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/target/resolution-cache/reports/tipsyswift-tipsyswift_2.11-test.xml[0m
@@ -8226,5 +8412,5 @@
 [0m[[0mdebug[0m] [0m	report for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT docs produced in /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/target/resolution-cache/reports/tipsyswift-tipsyswift_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT pom produced in /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/target/resolution-cache/reports/tipsyswift-tipsyswift_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for tipsyswift#tipsyswift_2.11;1.0-SNAPSHOT scala-tool produced in /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/target/resolution-cache/reports/tipsyswift-tipsyswift_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (7121ms resolve - 84ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (7550ms resolve - 84ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

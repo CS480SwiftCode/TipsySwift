@@ -4,7 +4,10 @@ import com.avaje.ebean.Model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+
+import controllers.Business;
 
 /**
  * Created by jon-bassi on 10/29/15.
@@ -15,28 +18,50 @@ public class Locations extends Model {
     // testing constructor only, do not use in production code
     public Locations()
     {
-        hash = "0";
         name = "0";
         yelp_url = "0";
         phone = "0";
         latitude = 0;
-        n_s = 'n';
         longitude = 0;
-        e_w = 'w';
         rating = 0;
-        hours_of_op = "0";
         happy_hour_times = "0";
     }
 
-    @Id
-    @Column(columnDefinition = "VARCHAR(64)")
-    public String hash;
+    public Locations(Business b)
+    {
+        name = b.getName();
+        yelp_url = b.getUrl();
+        phone = b.getPhone();
+        rating = b.getRating();
+        happy_hour_times = b.getHappyHour();
+        address = b.getLocationAddress();
+        city = b.getCity();
+        state = b.getState();
+        zip_code = b.getZipCode();
+        latitude = (float) b.getLatitude();
+        longitude = (float) b.getLongitude();
+    }
+
+    @Id @GeneratedValue
+    long id;
 
     @Column(columnDefinition = "VARCHAR(255)")
     String name;
 
-    @Column(columnDefinition = "VARCHAR(255)")
+    @Column(columnDefinition = "VARCHAR(255)", unique = true)
     String yelp_url;
+
+    @Column(columnDefinition = "VARCHAR(255)")
+    String address;
+
+    @Column(columnDefinition = "VARCHAR(255)")
+    String city;
+
+    @Column(columnDefinition = "VARCHAR(255)")
+    String state;
+
+    @Column(columnDefinition = "VARCHAR(255)")
+    String zip_code;
 
     @Column(columnDefinition = "VARCHAR(10)")
     String phone;
@@ -44,33 +69,14 @@ public class Locations extends Model {
     @Column(columnDefinition = "FLOAT(24)")
     float latitude;
 
-    @Column(columnDefinition = "CHAR(1)")
-    char n_s;
-
     @Column(columnDefinition = "FLOAT(24)")
     float longitude;
 
-    @Column(columnDefinition = "CHAR(1)")
-    char e_w;
-
     @Column(columnDefinition = "INT(1)")
-    int rating;
-
-    @Column(columnDefinition = "BLOB NOT NULL")
-    String hours_of_op;
+    double rating;
 
     @Column(columnDefinition = "BLOB NOT NULL")
     String happy_hour_times;
-
-   public String getHash()
-   {
-      return hash;
-   }
-
-   public void setHash(String hash)
-   {
-      this.hash = hash;
-   }
 
    public String getName()
    {
@@ -112,16 +118,6 @@ public class Locations extends Model {
       this.latitude = (long)latitude;
    }
 
-   public char getN_s()
-   {
-      return n_s;
-   }
-
-   public void setN_s(char n_s)
-   {
-      this.n_s = n_s;
-   }
-
    public float getLongitude()
    {
       return longitude;
@@ -132,34 +128,14 @@ public class Locations extends Model {
       this.longitude = (long)longitude;
    }
 
-   public char getE_w()
-   {
-      return e_w;
-   }
-
-   public void setE_w(char e_w)
-   {
-      this.e_w = e_w;
-   }
-
-   public int getRating()
+   public double getRating()
    {
       return rating;
    }
 
-   public void setRating(int rating)
+   public void setRating(double rating)
    {
       this.rating = rating;
-   }
-
-   public String getHours_of_op()
-   {
-      return hours_of_op;
-   }
-
-   public void setHours_of_op(String hours_of_op)
-   {
-      this.hours_of_op = hours_of_op;
    }
 
    public String getHappy_hour_times()
@@ -178,10 +154,6 @@ public class Locations extends Model {
      */
     private String getLatLon()
     {
-        if (n_s == 'S')
-            latitude = 0 - latitude;
-        if (e_w == 'W')
-            longitude = 0 - longitude;
         return latitude + "," + longitude;
     }
 
@@ -191,6 +163,7 @@ public class Locations extends Model {
      */
     public String toString()
     {
-        return name + "," + "," + "," + "," + "," + "," + yelp_url + "," + phone + "," + rating + "," + getLatLon();
+        return name + "," + address + "," + city + "," + state + "," + zip_code + "," + "," + yelp_url + "," + phone
+                + "," + rating + "," + getLatLon();
     }
 }

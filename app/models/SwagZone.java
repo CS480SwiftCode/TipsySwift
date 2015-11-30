@@ -13,19 +13,16 @@ import javax.persistence.Id;
 @Entity
 public class SwagZone extends Model {
 
+    public SwagZone(String coords)
+    {
+        coordinates = coords;
+    }
+
+
     @Id @GeneratedValue
     long id;
 
-    @Column(columnDefinition = "FLOAT(24)")
-    float latitude;
-
-    @Column(columnDefinition = "CHAR(1)")
-    char n_s;
-
-    @Column(columnDefinition = "FLOAT(24)")
-    float longitude;
-
-    @Column(columnDefinition = "CHAR(1)")
-    char e_w;
+    @Column(columnDefinition = "VARCHAR(255)", unique = true)
+    String coordinates;
 
 }
