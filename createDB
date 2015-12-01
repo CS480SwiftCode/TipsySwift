@@ -12,7 +12,7 @@ else
 fi
 
 if [ $# -eq 0 ]; then
-   mysql -u root -e 'create database tipsyswift;'
+
    mysql -u root -e 'create user 'sub'@'localhost' identified by "123456";'
    mysql -u root -e 'GRANT CREATE ROUTINE, CREATE VIEW, ALTER, SHOW VIEW, CREATE, ALTER ROUTINE, EVENT, INSERT, SELECT, DELETE, TRIGGER, REFERENCES, UPDATE, DROP, EXECUTE, LOCK TABLES, CREATE TEMPORARY TABLES, INDEX ON tipsyswift.* TO 'sub'@'localhost';'
    echo "Reminder that MySQL is currently running. "

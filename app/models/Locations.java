@@ -158,12 +158,12 @@ public class Locations extends Model {
     }
 
     /**
-     * "Name,Address,City,State,ZipCode,CountryCode,URL,Phone,Rating,Latitude,Longitude"
+     * "Name,Address,City,hh_times,ZipCode,CountryCode,URL,Phone,Rating,Latitude,Longitude"
      * @return
      */
     public String toString()
     {
-        return name + "," + address + "," + city + "," + state + "," + zip_code + "," + "," + yelp_url + "," + phone
+        return name + "," + address + "," + city + "," + getHappy_hour_times() + "," + zip_code + "," + "," + yelp_url + "," + phone
                 + "," + rating + "," + getLatLon();
     }
 }

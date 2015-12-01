@@ -1,5 +1,6 @@
 package controllers;
 
+import com.typesafe.config.ConfigFactory;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -10,6 +11,7 @@ import org.scribe.model.Response;
 import org.scribe.model.Token;
 import org.scribe.model.Verb;
 import org.scribe.oauth.OAuthService;
+import play.Play;
 
 import java.io.*;
 import java.nio.ByteBuffer;
@@ -39,7 +41,7 @@ public class YelpAPI
     {
         try
         {
-            File keys = new File("public/key.cfg");
+            File keys = Play.application().getFile("conf/key.cfg");
             Properties prop = new Properties();
             prop.load(new FileReader(keys));
             CONSUMER_KEY = prop.getProperty("CKEY");

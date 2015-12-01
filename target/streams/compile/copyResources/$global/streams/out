@@ -1,7 +1,0 @@
-[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Users/cfrancis/projects/TipsySwift/conf/application.conf,/Users/cfrancis/projects/TipsySwift/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Users/cfrancis/projects/TipsySwift/conf/evolutions,/Users/cfrancis/projects/TipsySwift/target/scala-2.11/classes/evolutions)[0m
-[0m[[0mdebug[0m] [0m	(/Users/cfrancis/projects/TipsySwift/conf/logback.xml,/Users/cfrancis/projects/TipsySwift/target/scala-2.11/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/Users/cfrancis/projects/TipsySwift/conf/routes,/Users/cfrancis/projects/TipsySwift/target/scala-2.11/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/Users/cfrancis/projects/TipsySwift/conf/evolutions/default,/Users/cfrancis/projects/TipsySwift/target/scala-2.11/classes/evolutions/default)[0m
-[0m[[0mdebug[0m] [0m	(/Users/cfrancis/projects/TipsySwift/conf/evolutions/default/1.sql,/Users/cfrancis/projects/TipsySwift/target/scala-2.11/classes/evolutions/default/1.sql)[0m
