@@ -37,7 +37,7 @@ public class Application extends Controller
         {
             YelpAPI yelp = new YelpAPI();
 
-            System.out.println("None Found");
+            //System.out.println("None Found");
 
             SwagZone newZone = new SwagZone(coordinates[0] + "," + coordinates[1]);
             newZone.save();
@@ -67,7 +67,7 @@ public class Application extends Controller
 
             for (Business b : businesses)
             {
-                if (b.getHappyHour() == null || b.getHappyHour().equals("Undetermined., Undetermined."))
+                if (b.getHappyHour() == null || b.getHappyHour().contains("Undetermined"))
                     continue;
                 Locations temp = new Locations(b);
                 try
@@ -76,9 +76,6 @@ public class Application extends Controller
                 }
                 catch (Exception e)
                 {
-                    System.out.println("duplicate entry, reloading");
-                    temp.delete();
-                    temp.save();
                     continue;
                 }
             }
@@ -97,7 +94,7 @@ public class Application extends Controller
             toReturn.append(l + "\n");
         }
 
-        System.out.println(toReturn);
+        //System.out.println(toReturn);
         return ok(toReturn.toString());
     }
 
