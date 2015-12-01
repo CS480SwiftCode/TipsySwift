@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/conf/routes
-// @DATE:Mon Nov 30 14:50:04 PST 2015
+// @SOURCE:/Users/cfrancis/projects/TipsySwift/conf/routes
+// @DATE:Mon Nov 30 17:50:26 PST 2015
 
 package router
 

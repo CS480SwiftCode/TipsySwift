@@ -58,6 +58,7 @@ Seq[Any](format.raw/*1.19*/("""
     <script type="text/javascript" src="/assets/bower_components/angularjs-dropdown-multiselect/dist/angularjs-dropdown-multiselect.min.js"></script>
     <script type="text/javascript" src="/assets/bower_components/angular-cookies/angular-cookies.min.js"></script>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+    <script type="text/javascript" src="/assets/bower_components/ngStorage/ngStorage.min.js"/></script>
     <script type="text/javascript" src='/assets/javascripts/mainPage.js'></script>
     <script type="text/javascript" src="/assets/javascripts/zipCodeController.js"></script>
     <script type="text/javascript" src="/assets/maps/mapController.js"></script>
@@ -93,9 +94,9 @@ Seq[Any](format.raw/*1.19*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Mon Nov 30 14:50:05 PST 2015
-                  SOURCE: /Users/jon-bassi/Documents/javaworkspace/CS480SwiftCode/TipsySwift/app/views/main.scala.html
-                  HASH: f76885a8245f0592e36e9ee4f2f45776e6dce79e
+                  DATE: Mon Nov 30 18:32:28 PST 2015
+                  SOURCE: /Users/cfrancis/projects/TipsySwift/app/views/main.scala.html
+                  HASH: f59bbf4b7cdebfa9e079a2c1904ab371dcb67b12
                   MATRIX: 741->1|853->18|882->21
                   LINES: 27->1|32->1|35->4
                   -- GENERATED --

@@ -5,6 +5,7 @@ angular.module("app").controller('formController', ['$rootScope', '$location', '
     	name : null,
     	daysModel : []
    };
+   $rootScope.reload = true;
    $scope.submit = function(){
    		alert("Thank you for your contribution it will be reviewed and added");
    };

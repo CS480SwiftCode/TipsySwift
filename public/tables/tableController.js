@@ -3,18 +3,22 @@ angular.module("app").controller('tableController', ['$rootScope', '$location', 
 $scope.sortType = 'name'; //set the default sort type
 $scope.softReverse = false; // set the default sort order
 $scope.searchName = ''; //the the default sort filter
-var message = $cookies.getObject('locationChoice');
+$rootScope.reload = true;
+var message2 = $cookies.getObject('locationChoice');
+var message3 = $cookies.getObject('locationChoice2');
+if(message3 != undefined){var message = message2.concat(message3);}
+else{var message = message2;}
 $scope.resturants = []
 var json = {};
 var dist = [];
 distance();
 function setTable(){
-    for(i = 1; i < message.length; i++)
+    for(i = 0; i < message.length; i++)
     {
         json = { name : message[i][0],
         		rating : message[i][8],
-        		hhours : "NA",
-        		dist : dist[(i-1)]
+        		hhours : message[i][3],
+        		dist : dist[i]
         		};
         $scope.resturants.push(json);
     }
@@ -29,7 +33,7 @@ function distance() {
     var dat = $cookies.getObject('geoPlace');
     var resO = new google.maps.LatLng(dat.lat, dat.lng);
     var res = []
-    for(i = 1; i < message.length; i++){
+    for(i = 0; i < message.length; i++){
         res.push(new google.maps.LatLng(message[i][9], message[i][10]));
     }
     console.log(res);

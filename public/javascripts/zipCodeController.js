@@ -1,5 +1,6 @@
-angular.module("app").controller('zipCodeController', ['$rootScope', '$location', '$scope', '$http', '$cookies', function($rootScope, $location, $scope, $http, $cookies) {
+angular.module("app").controller('zipCodeController', ['$rootScope', '$location', '$scope', '$http', '$cookies', '$window', function($rootScope, $location, $scope, $http, $cookies, $window) {
   $scope.location = "";
+  $rootScope.reload = true;
   $scope.go = function(){
 	var geocoder = new google.maps.Geocoder();
 	geocoder.geocode( { 'address': $scope.location}, function(results, status) {
@@ -14,9 +15,29 @@ angular.module("app").controller('zipCodeController', ['$rootScope', '$location'
       console.log(swaggy);
       $http.get(swaggy)
       .then(function(res){
-        $cookies.putObject('locationChoice', Papa.parse(res.data).data);
+        //sessionStorage.setItem('locationChoice', Papa.parse(res.data).data);
+        var yolo = [];
+        if(Papa.parse(res.data).data.length > 10){
+          for(i = 0; i <10; i++){
+            yolo.push(Papa.parse(res.data).data[i]);
+          }
+          var rekt = [];
+          for(i = 10; i < (Papa.parse(res.data).data.length -1); i++){
+            rekt.push(Papa.parse(res.data).data[i]);
+          }
+          $cookies.putObject('locationChoice', yolo);
+          $cookies.putObject('locationChoice2', rekt);
+        }
+        else{
+          for(i = 0; i < (Papa.parse(res.data).data.length-1); i++){
+            yolo.push(Papa.parse(res.data).data[i]);
+          }
+          $cookies.putObject('locationChoice', yolo);
+          $cookies.putObject('locationChoice2', []);
+        }
         //$rootScope.$broadcast('eventSwag', { message: Papa.parse(res.data) });
       });
+      $rootScope.reload  = true;
       $cookies.putObject('geoPlace', geoCords);
       $location.path('/map');
       $scope.location = "";
