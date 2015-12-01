@@ -28,13 +28,13 @@ public class TextAnalyzer
                 }
             }
         }
-        return determineMostFrequent(days) + ", " + determineMostFrequent(times);
+        return determineMostFrequent(days) + ": " + determineMostFrequent(times);
     }
 
     // In an ArrayList of Strings, returns most frequent String.
     private static String determineMostFrequent(ArrayList<String> originalList)
     {
-        String mostFrequent = "Undetermined.";
+        String mostFrequent = "Undetermined";
 
         // Gets all unique Strings.
         ArrayList<String> duplicates = new ArrayList<>();
@@ -66,7 +66,7 @@ public class TextAnalyzer
         }
 
         if (ambiguity == true)
-            mostFrequent = "Undetermined.";
+            mostFrequent = "Undetermined";
         return mostFrequent;
     }
 
